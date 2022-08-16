@@ -18,7 +18,7 @@ $CFG->dboptions = array (
 );
 
 $CFG->wwwroot   = 'http://moodle-learning.herokuapp.com';
-$CFG->dataroot  = '/var/www/moodledata';
+$CFG->dataroot  = 'tmp/var/www/moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;

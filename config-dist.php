@@ -63,14 +63,14 @@ $CFG->dboptions = array(
                                 // support advanced options on connection.
                                 // If you set those in the database then
                                 // the advanced settings will not be sent.
-    'dbcollation' => 'utf8mb4_unicode_ci', // MySQL has partial and full UTF-8
+    //'dbcollation' => 'utf8mb4_unicode_ci', // MySQL has partial and full UTF-8
                                 // support. If you wish to use partial UTF-8
                                 // (three bytes) then set this option to
                                 // 'utf8_unicode_ci', otherwise this option
                                 // can be removed for MySQL (by default it will
                                 // use 'utf8mb4_unicode_ci'. This option should
                                 // be removed for all other databases.
-    // 'fetchbuffersize' => 100000, // On PostgreSQL, this option sets a limit
+    'fetchbuffersize' => 100000, // On PostgreSQL, this option sets a limit
                                 // on the number of rows that are fetched into
                                 // memory when doing a large recordset query
                                 // (e.g. search indexing). Default is 100000.

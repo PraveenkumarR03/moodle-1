@@ -17,7 +17,7 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = 'http://localhost/moodle';
+$CFG->wwwroot   = 'http://moodle-learning.herokuapp.com';
 $CFG->dataroot  = '/var/www/moodledata';
 $CFG->admin     = 'admin';
 

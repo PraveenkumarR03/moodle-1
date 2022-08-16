@@ -4,21 +4,21 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = 'pgsql';
+$CFG->dbtype    = getenv('DATABASE_TYPE');
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'localhost';
-$CFG->dbname    = 'moodle';
-$CFG->dbuser    = 'moodle';
-$CFG->dbpass    = 'askcs@2003';
+$CFG->dbhost    = getenv('DATABASE_HOST');
+$CFG->dbname    = getenv('DATABASE_NAME');
+$CFG->dbuser    = getenv('DATABASE_USER');
+$CFG->dbpass    = getenv('DATABASE_PASSWORD');
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbport' => '',
+  'dbport' => getenv('DATABASE_PORT'),
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = 'http://moodle-learning.herokuapp.com';
-$CFG->dataroot  = 'tmp/var/www/moodledata';
+$CFG->wwwroot   = getenv('WWWROOT');
+$CFG->dataroot  = getenv('DATAROOT');
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
